@@ -10,29 +10,56 @@
 <body class="bg-light">
     <div class="container">
         <div class="row">
-            <p class="mt-5 text-center">
-                <span class="col-4  text-success btn"><b>35 000 ₽</b></span>
-                <a class="col-4 col-lg-4 btn btn-primary" href="income.html">Добавить доход</a> 
+            <div class="col-12">
+                <h3 class="mt-5 text-center">Мои финансы</h3>
+            </div>
+        </div>
+
+        <div class="row m1-2">
+            <label for="staticCategory" class="col-3 col-form-label text-right" style="text-align: right;">За </label>
+            <div class="col-6 col-lg-5">
+                <select class="form-control" id="staticCategory">
+                <option>Сегодня</option>
+                <option>Эту неделю</option>
+                <option>Этот месяц</option>
+                <option>За всё время</option>
+            </select>
+        </div>
+
+        <div class="row justify-content-center mt-2">
+            <div class="col-4 border-start border-end">
+                <p>Доходы</p>
+                <p class="text-success"><b>35 000 ₽</b></p>
+                
+              </div>
+              <div class="col-4 border-end">
+                <p>Расходы</p>
+                <p class="text-danger"><b>2 500 ₽</b></p>
+              </div>
+
+        </div>
+        <div class="row justify-content-center mt-2">
+            <div class="col-8 border-start border-end">
+                <p>Баланс за период</p>
+                <p class="text-dark"><b>+ 32 500 ₽</b></p>
+              </div>
+        </div>
+
+        <div class="row">
+            <p class="mt-3 text-center">
+                <a class="col-4 col-lg-4 btn btn-outline-success" href="income.html">Добавить доход</a>
+                <a class="col-4 col-lg-4 btn btn-outline-danger" href="consumption.html">Добавить расход</a>  
             </p>
     
-            <p class="mt-2 text-center">
-                <span class="col-4 text-danger btn"><b>2 500 ₽</b></span>
-                <a class="col-4 col-lg-4 btn btn-primary" href="consumption.html">Добавить расход</a> 
-            </p>
-
-            <p class="mt-2 text-center">
+            <p class="mt-1 text-center">
                 <a class="col-8 text-primary align-center" href="trans.html">Транзакции</a> 
             </p>
 
-            <p class="mt-2 text-center">
-                <a class="col-8 text-primary align-center" href="state.html">Состояние</a> 
-            </p>
-
-            <p class="mt-2 text-center">
+            <p class="mt-1 text-center">
                 <a class="col-8 text-primary align-center" href="analys.html">Посмотреть анализ расходов</a> 
             </p>
 
-            <p class="mt-2 text-center">
+            <p class="mt-1 text-center">
                 <a class="col-8 text-primary align-center" href="plans.html">Планирование</a> 
             </p>
         </div>      
