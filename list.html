@@ -9,60 +9,65 @@
 </head>
 <body class="bg-light">
     <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <h3 class="mt-5 text-center">Мои финансы</h3>
+        <div class="py-3 d-flex flex-row justify-content-center align-items-center">
+            <div class="p-1"><b>Ваши финансы</b></div>
+            <div class="p-1">За</div>
+            <div class="p-1">
+                <select class="form-control" id="staticCategory">
+                    <option>Сегодня</option>
+                    <option>Эту неделю</option>
+                    <option>Этот месяц</option>
+                    <option>За всё время</option>
+                </select>
             </div>
         </div>
 
-        <div class="row m1-2">
-            <label for="staticCategory" class="col-3 col-form-label text-right" style="text-align: right;">За </label>
-            <div class="col-6 col-lg-5">
-                <select class="form-control" id="staticCategory">
-                <option>Сегодня</option>
-                <option>Эту неделю</option>
-                <option>Этот месяц</option>
-                <option>За всё время</option>
-            </select>
-        </div>
-
-        <div class="row justify-content-center mt-2">
-            <div class="col-4 border-start border-end">
+        <div class="d-flex flex-row justify-content-center align-items-center">
+            <div class="border-start border-end px-1">
                 <p>Доходы</p>
                 <p class="text-success"><b>35 000 ₽</b></p>
-                
-              </div>
-              <div class="col-4 border-end">
+            </div>
+            <div class="border-end px-1">
                 <p>Расходы</p>
                 <p class="text-danger"><b>2 500 ₽</b></p>
-              </div>
-
-        </div>
-        <div class="row justify-content-center mt-2">
-            <div class="col-8 border-start border-end">
+            </div>
+            <div class="border-end px-1">
                 <p>Баланс за период</p>
                 <p class="text-dark"><b>+ 32 500 ₽</b></p>
-              </div>
+            </div>
         </div>
 
+        <div class="d-flex flex-row justify-content-center align-items-center my-3">
+            <a class="mx-1 btn btn-outline-success" href="income.html">Добавить доход</a>
+            <a class="mx-1 btn btn-outline-danger" href="consumption.html">Добавить расход</a>  
+        </div>
+
+
+
+
         <div class="row">
-            <p class="mt-3 text-center">
-                <a class="col-4 col-lg-4 btn btn-outline-success" href="income.html">Добавить доход</a>
-                <a class="col-4 col-lg-4 btn btn-outline-danger" href="consumption.html">Добавить расход</a>  
-            </p>
     
-            <p class="mt-1 text-center">
-                <a class="col-8 text-primary align-center" href="trans.html">Транзакции</a> 
+            <p class="mb-0 mt-1 text-center">
+                <a class="col-8 text-primary align-center" href="trans.html">Все операции</a>
             </p>
 
-            <p class="mt-1 text-center">
+            <p class="mb-0 mt-1 text-center">
+                <a class="col-8 text-primary align-center" href="bill.html">Постоянные траты</a>  
+            </p>
+
+            <p class="mb-0 mt-1 text-center">
                 <a class="col-8 text-primary align-center" href="analys.html">Посмотреть анализ расходов</a> 
             </p>
 
-            <p class="mt-1 text-center">
+            <p class="mb-0 mt-1 text-center">
                 <a class="col-8 text-primary align-center" href="plans.html">Планирование</a> 
             </p>
-        </div>      
+        </div> 
+        
+        
+        <div class="d-flex flex-row justify-content-center align-items-center my-3">
+            <a class="p-1 btn btn-outline-secondary" href="#">Выйти из аккаунта</a>
+        </div>
     </div>
     
 </body>
